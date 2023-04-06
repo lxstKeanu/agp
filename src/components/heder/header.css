@@ -1,0 +1,14 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 60px;
+    margin-bottom: 80px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #000;
+}
