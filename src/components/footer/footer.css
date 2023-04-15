@@ -1,0 +1,37 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.logo-ag-photo{
+    cursor: pointer;
+}
+
+.footer-logo-name{
+    font-family: 'PT Serif', serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #564734;
+    margin-left: 10px;
+}
+
+.year-of-creation{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    cursor: default;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-creator{
+    font-family: 'PT Serif', serif;
+    font-size: 13px;
+    cursor: pointer;
+}

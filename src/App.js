@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom"
 import "./App.css";
 import FaqPage from "./pages/faq-page/faq-page";
 
+
 function App() {
   return (
     <Routes>
