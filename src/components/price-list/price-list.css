@@ -6,6 +6,9 @@
     align-items: center;
     width: 400px;
     height: 500px;
+    -webkit-border-radius: 100px;
+    -khtml-border-radius: 100px;
+    -moz-border-radius: 100px;
     border-radius: 100px;
     outline: 2px solid #d6bea6;
     margin: 0 auto;
