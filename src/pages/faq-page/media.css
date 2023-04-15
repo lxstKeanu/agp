@@ -222,6 +222,10 @@
         font-size: 14px;
     }
 
+    .upper-text-info-main{
+        font-size: 23px;
+    }
+
     .text-viewer {
         display: flex;
         flex-wrap: nowrap;
