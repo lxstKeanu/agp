@@ -2,8 +2,8 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logoag from "../../images/agp1.jpg";
 import "./footer.css";
-import logoag from "../../images/agp1.png";
 
 function Footer() {
   return (

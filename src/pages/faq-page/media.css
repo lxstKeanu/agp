@@ -56,6 +56,7 @@
 
     .upper-text-description{
         margin: 0;
+        padding: 10px 10px;
     }
 
     .upper-text-info-main{
@@ -86,7 +87,11 @@
     }
 
     .text-widget {
-        width: 90%;
+        width: 100%;
+    }
+
+    .text-widget-description{
+        margin: 0;
     }
     
     .bottom-information-text{
@@ -182,7 +187,11 @@
     }
 
     .text-widget {
-        width: 95%;
+        width: 100%;
+    }
+
+    .text-widget-description{
+        margin: 0;
     }
     
     .bottom-information-text{
@@ -238,7 +247,11 @@
     }
 
     .text-widget {
-        width: 95%;
+        width: 100%;
+    }
+
+    .text-widget-description{
+        margin: 0;
     }
 
     .footer{
@@ -267,7 +280,11 @@
     }
 
     .text-widget {
-        width: 95%;
+        width: 100%;
+    }
+
+    .text-widget-description{
+        margin: 0;
     }
 
     .footer{
@@ -312,7 +329,11 @@
     }
 
     .text-widget {
-        width: 95%;
+        width: 100%;
+    }
+
+    .text-widget-description{
+        margin: 0;
     }
 
     .footer{

@@ -6,12 +6,16 @@
     align-items: center;
     width: 400px;
     height: 500px;
-    -webkit-border-radius: 100px;
-    -khtml-border-radius: 100px;
-    -moz-border-radius: 100px;
-    border-radius: 100px;
-    outline: 2px solid #d6bea6;
+    -moz-border-radius: 20%; 
+    -webkit-border-radius: 20%;
+    -khtml-border-radius: 20%;
+    -o-border-radius: 20%;
+    -ms-border-radius: 20%;
+    -icab-border-radius: 20%;
+    border-radius: 20%;
+    border: 2px solid #d6bea6;
     margin: 0 auto;
+    background-color: #fff;
     
 }
 
@@ -43,4 +47,5 @@
     color: #fff;
     font-family: 'Open Sans';
     font-size: 16px;
+    padding-bottom: 5px;
 }

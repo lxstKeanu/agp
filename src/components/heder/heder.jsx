@@ -3,7 +3,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
-import logoag from "../../images/agp1.png";
+import logoag from "../../images/agp1.jpg";
 import { useTranslation } from "react-i18next";
 import useLocalStorage from "../../hooks/use-lockalstorage";
 import i18n from "../../i18n/i18n";

@@ -5,6 +5,9 @@ import Header from "../../components/heder/heder";
 import PriceList from "../../components/price-list/price-list";
 import MainInfo from "../../components/main-info/main-info";
 import Footer from "../../components/footer/footer";
+import { ReactComponent as Telegram } from "../../images/telegram.svg";
+import { ReactComponent as Instagram } from "../../images/instagram.svg";
+import { ReactComponent as Whatsapp } from "../../images/whatsapp.svg";
 import { useTranslation } from "react-i18next";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -60,7 +63,7 @@ function FaqPage() {
           items={items}
           responsive={responsive}
           controlsStrategy="alternate"
-          disableButtonsControls={true}
+          disableButtonsControls={false}
           keyboardNavigation={true}
         />
       </div>
@@ -84,16 +87,36 @@ function FaqPage() {
         <MainInfo />
         <div className="bottom-information">
           <span className="bottom-information-text">{t("footer-text")}</span>
-          <a
-            href="https://instagram.com/alesia__ag/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-link d-inline"
-          >
-            <div className="btn-insta">
-              <div className="btn-insta-text">{t("footer-btn-text")}</div>
+
+          <div className="btn-social">
+            <div className="btn-social-text">{t("footer-btn-text")}</div>
+            <div className="btn-social-icons">
+              <a
+                href="https://t.me/alesia_ag"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <Telegram />
+              </a>
+              <a
+                href="https://instagram.com/alesia__ag/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <Instagram />
+              </a>
+              <a
+                href="https://wa.me/+380957628437"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+              >
+                <Whatsapp />
+              </a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
       <Footer />

@@ -4,10 +4,11 @@ html{
     background-repeat: no-repeat;
     background-position:  right top;
     overflow-x: hidden;
+    position: relative;
 }
 
 .container{
-    padding: 0 calc(50% - 850px); 
+    padding: 0 10px;
 }
 
 .wrapper-card{
@@ -41,6 +42,8 @@ html{
     text-align: center;
     color: #677C77;
     margin-bottom: 30px;
+    padding: 0px 20px;
+    line-height: 25px;
 }
 
 .upper-text-info-bottom{
@@ -56,8 +59,10 @@ html{
     margin-bottom: 50px;
     width: 200px;
     height: 60px;
+}
 
-
+.btn-insta:hover{
+    transform: scale(1.2);
 }
 
 .btn-insta-text{
@@ -85,4 +90,42 @@ html{
     text-align:  center;
     color: #677C77;
     margin: 50px 0 30px 0;
+    line-height: 25px;
+    padding: 0px 20px;
+}
+
+.btn-social{
+    background-color: rgb(95,87,51);
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: rgb(107,100,70);
+    letter-spacing: 0px;
+    margin-bottom: 50px;
+    width: 230px;
+    height: 100px;
+    cursor: default;
+}
+
+.btn-social-text{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255,252,245);
+    padding: 20px 18px 20px 18px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-social-icons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-link:hover{
+    transform: scale(1.2);
 }
