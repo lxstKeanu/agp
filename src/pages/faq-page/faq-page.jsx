@@ -70,9 +70,14 @@ function FaqPage() {
       <div className="container">
         <div className="upper-text-description">
           <span className="upper-text-info-main">{t("main-thanks")}</span>
-          <span className="upper-text-info">
-            {t("main-thanks-description")}
-          </span>
+          <div className="main-block-text">
+            <span className="upper-text-info">
+              {t("main-thanks-description")}
+            </span>
+            <span className="upper-text-info">
+              {t("main-thanks-description-1")}
+            </span>
+          </div>
           <a
             href="https://instagram.com/alesia__ag/"
             target="_blank"
@@ -87,7 +92,6 @@ function FaqPage() {
         <MainInfo />
         <div className="bottom-information">
           <span className="bottom-information-text">{t("footer-text")}</span>
-
           <div className="btn-social">
             <div className="btn-social-text">{t("footer-btn-text")}</div>
             <div className="btn-social-icons">

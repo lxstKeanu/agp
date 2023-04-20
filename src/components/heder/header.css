@@ -36,7 +36,7 @@
     font-size: 21px;
     font-weight: 400;
     color: #564734;
-    margin-left: 10px;
+    padding: 0 20px 0 10px;
 }
 
 .btn{
@@ -44,100 +44,297 @@
     margin-right: 40px;
 }
 
-.languages{
-    font-family: 'PT Serif', serif;
-    font-size: 17px;
-    font-weight: 400;
-    color: #564734;
-}
-.custom-btn {
-    width: 130px;
-    height: 40px;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
+#info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #2d3667;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px;
+    background-color: #f3f9f9;
+  }
+ 
+  #form__cover {
+    display: flex;
     position: relative;
-    display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
-    outline: none;
-    margin-right: 20px;
-}
-.btn-7 {
-    background: linear-gradient(0deg, rgb(237,155,174) 0%, rgb(237,155,174) 100%);
-      line-height: 42px;
-      padding: 0;
-      border: none;
+    width: 125px;
+    height: 42px;
+    z-index: 1;
+    margin-right: 10px;
+  }
+ 
+  #select-button {
+    position: relative;
+    height: 16px;
+    padding: 12px 14px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 4px;
+    border: 1px solid gray;
+    cursor: pointer;
+  }
+ 
+  #options-view-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+ 
+  #selected-value {
+    font-size: 16px;
+    line-height: 1;
+  }
+ 
+ 
+ 
+  .option,
+  .label {
+    color: #2d3667;
+    font-size: 16px;
+  }
+ 
+ 
+  #options-view-button:checked + #select-button #chevrons i {
+    color: #2d3667;
+  }
+ 
+  .options {
+    position: absolute;
+    left: 0;
+    width: 158px;
+  }
+ 
+  #options {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 125px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+ 
+  #options-view-button:checked ~ #options {
+    border: 1px solid #e2eded;
+    border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+  }
+ 
+  .option {
+    position: relative;
+    line-height: 1;
+    transition: 0.3s ease all;
+    z-index: 2;
+  }
+ 
+  .option i {
+    position: absolute;
+    left: 14px;
+    padding: 0;
+    display: none;
+  }
+ 
+  #options-view-button:checked ~ #options .option i {
+    display: block;
+    padding: 12px 0;
+  }
+ 
+  .label {
+    display: none;
+    padding: 0;
+    margin-left: 27px;
+  }
+ 
+  #options-view-button:checked ~ #options .label {
+    display: block;
+    padding: 12px 14px;
+    margin: 0;
+  }
+ 
+  .s-c {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+  }
+ 
+  .s-c.top {
+    top: 0;
+  }
+ 
+  .s-c.bottom {
+    bottom: 0;
+  }
+ 
+  input[type="radio"] {
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+ 
+  .s-c:hover ~ i {
+    color: #fff;
+    opacity: 0;
+  }
+ 
+  .s-c:hover {
+    height: 100%;
+    z-index: 1;
+  }
+ 
+  .s-c.bottom:hover + i {
+    bottom: -25px;
+    animation: moveup 0.3s ease 0.1s forwards;
+  }
+ 
+  .s-c.top:hover ~ i {
+    top: -25px;
+    animation: movedown 0.3s ease 0.1s forwards;
+  }
+ 
+  @keyframes moveup {
+    0% {
+      bottom: -25px;
+      opacity: 0;
     }
-    .btn-7 span {
-      position: relative;
-      display: block;
-      width: 100%;
-      height: 100%;
-    }
-    .btn-7:before,
-    .btn-7:after {
-      position: absolute;
-      content: "";
-      right: 0;
+    100% {
       bottom: 0;
-      background: rgb(237,155,174);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
+      opacity: 1;
     }
-    .btn-7:before{
-       height: 0%;
-       width: 2px;
+  }
+ 
+  @keyframes movedown {
+    0% {
+      top: -25px;
+      opacity: 0;
     }
-    .btn-7:after {
-      width: 0%;
-      height: 2px;
-    }
-    .btn-7:hover{
-      color: rgb(237,155,174);
-      background: transparent;
-    }
-    .btn-7:hover:before {
-      height: 100%;
-    }
-    .btn-7:hover:after {
-      width: 100%;
-    }
-    .btn-7 span:before,
-    .btn-7 span:after {
-      position: absolute;
-      content: "";
-      left: 0;
+    100% {
       top: 0;
-      background: rgb(237,155,174);
-      box-shadow:
-       -7px -7px 20px 0px rgba(255,255,255,.9),
-       -4px -4px 5px 0px rgba(255,255,255,.9),
-       7px 7px 20px 0px rgba(0,0,0,.2),
-       4px 4px 5px 0px rgba(0,0,0,.3);
-      transition: all 0.3s ease;
+      opacity: 1;
     }
-    .btn-7 span:before {
-      width: 2px;
-      height: 0%;
-    }
-    .btn-7 span:after {
-      height: 2px;
-      width: 0%;
-    }
-    .btn-7 span:hover:before {
-      height: 100%;
-    }
-    .btn-7 span:hover:after {
-      width: 100%;
-    }
+  }
+ 
+  .label {
+    transition: 0.3s ease all;
+  }
+ 
+  .opt-val {
+    position: absolute;
+    left: 14px;
+    width: 100px;
+    height: 21px;
+    opacity: 0;
+    background-color: rgb(247, 247, 247);
+    transform: scale(0);
+  }
+ 
+  .option input[type="radio"]:checked ~ .opt-val {
+    opacity: 1;
+    transform: scale(1.01);
+  }
+ 
+  .option input[type="radio"]:checked ~ i {
+    top: 0;
+    bottom: auto;
+    opacity: 1;
+    animation: unset;
+  }
+ 
+  .option input[type="radio"]:checked ~ i,
+  .option input[type="radio"]:checked ~ .label {
+    color: #fff;
+  }
+ 
+  .option input[type="radio"]:checked ~ .label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+ 
+  #options-view-button:not(:checked)
+    ~ #options
+    .option
+    input[type="radio"]:checked
+    ~ .opt-val {
+    top: -30px;
+  }
+ 
+  .option:nth-child(1) input[type="radio"]:checked ~ .label:before {
+    background-color: #ed9bae;
+    border-radius: 4px 4px 0 0;
+  }
+ 
+  .option:nth-child(1) input[type="radio"]:checked ~ .opt-val {
+    top: -31px;
+  }
+ 
+  .option:nth-child(2) input[type="radio"]:checked ~ .label:before {
+    background-color: #ed9bae;
+  }
+ 
+  .option:nth-child(2) input[type="radio"]:checked ~ .opt-val {
+    top: -71px;
+  }
+ 
+  .option:nth-child(3) input[type="radio"]:checked ~ .label:before {
+    background-color: #ed9bae;
+  }
+ 
+  .option:nth-child(3) input[type="radio"]:checked ~ .opt-val {
+    top: -111px;
+  }
+ 
+  #option-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 40px;
+    transition: 0.3s ease all;
+    z-index: 1;
+    display: none;
+  }
+ 
+  #options-view-button:checked ~ #options #option-bg {
+    display: block;
+  }
+ 
+  .option:hover .label {
+    color: #fff;
+  }
+ 
+  .option:nth-child(1):hover ~ #option-bg {
+    top: 0;
+    background-color: #ed9bae;
+    border-radius: 4px 4px 0 0;
+  }
+ 
+  .option:nth-child(2):hover ~ #option-bg {
+    top: 40px;
+    background-color: #ed9bae;
+  }
+ 
+  .option:nth-child(3):hover ~ #option-bg {
+    top: 80px;
+    background-color: #ed9bae;
+  }
+
+

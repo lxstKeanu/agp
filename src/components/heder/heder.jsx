@@ -1,26 +1,31 @@
 /** @format */
 
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 import logoag from "../../images/agp1.jpg";
 import { useTranslation } from "react-i18next";
-import useLocalStorage from "../../hooks/use-lockalstorage";
-import i18n from "../../i18n/i18n";
 
 export default function Header() {
-  const { t } = useTranslation();
-  const [language, setLanguage] = useLocalStorage("language", "en");
+  const { t, i18n } = useTranslation();
 
-  const handleLenguageChange = () => {
-    if (language === "ua") {
-      i18n.changeLanguage("en");
-      setLanguage("en");
-    } else if (language === "en") {
-      i18n.changeLanguage("ua");
-      setLanguage("ua");
-    }
+  const onChangeLang = (e) => {
+    i18n.changeLanguage(e.target.value);
   };
+
+  useEffect(() => {
+    for (
+      let index = 0;
+      index < document.getElementsByClassName("lang").length;
+      index++
+    ) {
+      const element = document.getElementsByClassName("lang")[index];
+      if (element.value === i18n.language) {
+        element.setAttribute("selected", "true");
+      }
+    }
+  });
+
   return (
     <div>
       <div className="header">
@@ -39,10 +44,65 @@ export default function Header() {
             <span className=" btn btn-my-works">{t("My works")}</span>
           </NavLink>
         </div>
-        <div className="languages">
-          <button className="custom-btn btn-7" onClick={handleLenguageChange}>
-            <span>{language === "ua" ? t("ukrainian") : t("english")}</span>
-          </button>
+        <div>
+          {/* <select
+            className="select"
+            style={{ width: "100px" }}
+            onChange={onChangeLang}
+          >
+            <option value="en" className="lang">
+              English
+            </option>
+            <option value="ua" className="lang">
+              Українська
+            </option>
+            <option value="es" className="lang">
+              Española
+            </option>
+          </select> */}
+          <form id="form__cover">
+            <div id="select-box">
+              <input type="checkbox" id="options-view-button" />
+              <div id="select-button" class="section">
+                <div id="selected-value">
+                  <span>{t("language")}</span>
+                </div>
+              </div>
+              <div id="options">
+                <div class="option" onChange={onChangeLang}>
+                  <input
+                    class="s-c top"
+                    type="radio"
+                    name="platform"
+                    value="en"
+                  />
+                  <span class="label">English</span>
+                  <span class="opt-val">English</span>
+                </div>
+                <div class="option" onChange={onChangeLang}>
+                  <input
+                    class="s-c top"
+                    type="radio"
+                    name="platform"
+                    value="ua"
+                  />
+                  <span class="label">Українська</span>
+                  <span class="opt-val">Українська</span>
+                </div>
+                <div class="option" onChange={onChangeLang}>
+                  <input
+                    class="s-c top"
+                    type="radio"
+                    name="platform"
+                    value="es"
+                  />
+                  <span class="label">Española</span>
+                  <span class="opt-val">Española</span>
+                </div>
+                <div id="option-bg"></div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

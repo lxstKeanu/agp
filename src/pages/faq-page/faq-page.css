@@ -4,11 +4,10 @@ html{
     background-repeat: no-repeat;
     background-position:  right top;
     overflow-x: hidden;
-    position: relative;
 }
 
 .container{
-    padding: 0 10px;
+    padding: 0 50px;
 }
 
 .wrapper-card{
@@ -34,6 +33,11 @@ html{
     margin-bottom: 30px;
     color: #564734;
 }
+.main-block-text{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
 
 .upper-text-info{
     font-family: 'Open Sans', sans-serif;
@@ -41,7 +45,7 @@ html{
     font-weight: 400;
     text-align: center;
     color: #677C77;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding: 0px 20px;
     line-height: 25px;
 }
@@ -51,7 +55,7 @@ html{
 }
 
 .btn-insta{
-    background-color: rgb(95,87,51);
+    background-color: rgb(86,71,52);
     border-radius: 75px;
     border-width: 1px;
     border-color: rgb(107,100,70);
@@ -89,13 +93,12 @@ html{
     font-weight: 400;
     text-align:  center;
     color: #677C77;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 50px 0;
     line-height: 25px;
-    padding: 0px 20px;
 }
 
 .btn-social{
-    background-color: rgb(95,87,51);
+    background-color: rgb(86,71,52);
     border-radius: 50px;
     border-width: 1px;
     border-color: rgb(107,100,70);

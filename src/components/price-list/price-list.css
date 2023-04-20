@@ -15,14 +15,13 @@
     border-radius: 20%;
     border: 2px solid #d6bea6;
     margin: 0 auto;
-    background-color: #fff;
-    
 }
 
 .card-name{
     font-family: 'Open Sans';
     font-size: 27px;
     color: rgb(95,87,51);
+    cursor: default;
 }
 
 .card-description{
@@ -30,17 +29,20 @@
     background-color: #E0D5BE;
     border-radius: 30px;
     padding: 0 10px 0 10px;
+    cursor: default;
 }
 
 .card-price{
     color: #564734;
     font-size: 36px;
+    cursor: default;
 }
 
 .card-ul{
     padding: 15px 15px 15px 30px;
     background-color:#d6bea6;
     border-radius: 30px;
+    cursor: default;
 }
 
 .card-ul-text{

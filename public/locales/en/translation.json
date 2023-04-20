@@ -1,8 +1,7 @@
 {
-    "english":"English",
-    "ukrainian":"Ukrainian",
     "About me": "About me",
     "My works": "My works",
+    "language":"English",
     "LifeStyle":"LifeStyle",
     "Studio":"Studio",
     "card-text":"I'm creative with every shoot",
@@ -54,6 +53,8 @@
     "widget-card-description-9-1":"I travel by car and will be happy to come to you (locally I am in the city of Albacete), but in the case of a longer road - the payment of transport costs is discussed in Alicante, Valencia, Madrid and others - clarify the information in person.",
     "widget-card-main-10":"DURATION OF THE PHOTO SESSION",
     "widget-card-description-10-1":"Our filming lasts 1 hour. Unfortunately, the delay on the part of the customer does not shift the shooting time, please take this moment into account in the process of planning the route, etc.",
+    "widget-card-main-11":"Photo privacy",
+    "widget-card-description-11-1":"I post your photos on my Instagram page, if you don't want your photos to be there, €30 is added to the cost of the shoot.",
     "footer-text":"If you have any unanswered questions or you need more information, you can contact me and I will be happy to answer you.",
-    "footer-btn-text":"Contact me"
+    "footer-btn-text": "Contact me"
 }
