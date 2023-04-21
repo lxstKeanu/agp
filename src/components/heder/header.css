@@ -53,7 +53,7 @@
     font-size: 16px;
     text-align: center;
     padding: 14px;
-    background-color: #f3f9f9;
+    background-color: #ed9bae;
   }
  
   #form__cover {
@@ -64,14 +64,21 @@
     z-index: 1;
     margin-right: 10px;
   }
+
+  .arrow{
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    z-index: 5;
+  }
  
   #select-button {
     position: relative;
     height: 16px;
     padding: 12px 14px;
-    background-color: rgb(247, 247, 247);
+    background-color: #ed9bae;
     border-radius: 4px;
-    border: 1px solid gray;
+    border: 1px solid #d6bea6;
     cursor: pointer;
   }
  
@@ -93,18 +100,22 @@
     font-size: 16px;
     line-height: 1;
   }
+
+  #selected-value span{
+    color: #564734;
+  }
  
  
  
   .option,
   .label {
-    color: #2d3667;
+    color: #564734;
     font-size: 16px;
   }
  
  
   #options-view-button:checked + #select-button #chevrons i {
-    color: #2d3667;
+    color: #564734;
   }
  
   .options {
@@ -158,6 +169,7 @@
     display: block;
     padding: 12px 14px;
     margin: 0;
+    color: #564734;
   }
  
   .s-c {
@@ -238,8 +250,9 @@
     width: 100px;
     height: 21px;
     opacity: 0;
-    background-color: rgb(247, 247, 247);
+    
     transform: scale(0);
+    background-color: #ed9bae;
   }
  
   .option input[type="radio"]:checked ~ .opt-val {

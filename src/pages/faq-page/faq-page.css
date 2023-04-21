@@ -7,7 +7,7 @@ html{
 }
 
 .container{
-    padding: 0 50px;
+    padding: 0 25px;
 }
 
 .wrapper-card{
@@ -46,7 +46,6 @@ html{
     text-align: center;
     color: #677C77;
     margin-bottom: 10px;
-    padding: 0px 20px;
     line-height: 25px;
 }
 

@@ -1,13 +1,16 @@
 /** @format */
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import "./header.css";
 import logoag from "../../images/agp1.jpg";
+import { ReactComponent as ArrowUp } from "../../images/up-arrow.svg";
+import { ReactComponent as ArrowDown } from "../../images/down-arrow.svg";
 import { useTranslation } from "react-i18next";
+import "./header.css";
 
 export default function Header() {
   const { t, i18n } = useTranslation();
+  const [show, setShow] = useState(false);
 
   const onChangeLang = (e) => {
     i18n.changeLanguage(e.target.value);
@@ -45,39 +48,31 @@ export default function Header() {
           </NavLink>
         </div>
         <div>
-          {/* <select
-            className="select"
-            style={{ width: "100px" }}
-            onChange={onChangeLang}
-          >
-            <option value="en" className="lang">
-              English
-            </option>
-            <option value="ua" className="lang">
-              Українська
-            </option>
-            <option value="es" className="lang">
-              Española
-            </option>
-          </select> */}
           <form id="form__cover">
             <div id="select-box">
-              <input type="checkbox" id="options-view-button" />
+              <input
+                type="checkbox"
+                id="options-view-button"
+                onClick={() => setShow(!show)}
+              />
               <div id="select-button" class="section">
+                <span className="arrow">
+                  {show ? <ArrowUp /> : <ArrowDown />}
+                </span>
                 <div id="selected-value">
                   <span>{t("language")}</span>
                 </div>
               </div>
               <div id="options">
-                <div class="option" onChange={onChangeLang}>
+                <div className="option">
                   <input
                     class="s-c top"
                     type="radio"
                     name="platform"
                     value="en"
                   />
-                  <span class="label">English</span>
-                  <span class="opt-val">English</span>
+                  <span className="label">English</span>
+                  <span className="opt-val">English</span>
                 </div>
                 <div class="option" onChange={onChangeLang}>
                   <input
