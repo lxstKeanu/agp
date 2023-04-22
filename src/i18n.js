@@ -10,6 +10,8 @@ i18n
     .use(LanguageDetector)
     .use(initReactI18next)
     .init({
+        defaultLocale: 'en',
+        locales: ['en', 'ua', 'es'],
         fallbackLng: "en",
 
         interpolation: {
