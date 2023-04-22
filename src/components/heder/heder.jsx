@@ -35,7 +35,11 @@ export default function Header() {
         <div className="logo">
           <div className="logo-ag"></div>
           <NavLink className={"nav-link"}>
-            <img className="logo-ag-photo" src={logoag} alt="" />
+            <img
+              className="logo-ag-photo"
+              src={logoag}
+              alt=" logo Alesia AG Photographer"
+            />
             <span className="logo-name">Alesia AG Photographer</span>
           </NavLink>
         </div>
