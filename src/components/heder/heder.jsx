@@ -55,7 +55,7 @@ export default function Header() {
                 id="options-view-button"
                 onClick={() => setShow(!show)}
               />
-              <div id="select-button" class="section">
+              <div id="select-button" className="section">
                 <span className="arrow">
                   {show ? <ArrowUp /> : <ArrowDown />}
                 </span>
@@ -64,9 +64,9 @@ export default function Header() {
                 </div>
               </div>
               <div id="options">
-                <div className="option">
+                <div className="option" onChange={onChangeLang}>
                   <input
-                    class="s-c top"
+                    className="s-c top"
                     type="radio"
                     name="platform"
                     value="en"
@@ -74,25 +74,25 @@ export default function Header() {
                   <span className="label">English</span>
                   <span className="opt-val">English</span>
                 </div>
-                <div class="option" onChange={onChangeLang}>
+                <div className="option" onChange={onChangeLang}>
                   <input
-                    class="s-c top"
+                    className="s-c top"
                     type="radio"
                     name="platform"
                     value="ua"
                   />
-                  <span class="label">Українська</span>
-                  <span class="opt-val">Українська</span>
+                  <span className="label">Українська</span>
+                  <span className="opt-val">Українська</span>
                 </div>
-                <div class="option" onChange={onChangeLang}>
+                <div className="option" onChange={onChangeLang}>
                   <input
-                    class="s-c top"
+                    className="s-c top"
                     type="radio"
                     name="platform"
                     value="es"
                   />
-                  <span class="label">Española</span>
-                  <span class="opt-val">Española</span>
+                  <span className="label">Española</span>
+                  <span className="opt-val">Española</span>
                 </div>
                 <div id="option-bg"></div>
               </div>
