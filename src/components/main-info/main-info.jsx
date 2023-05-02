@@ -129,15 +129,6 @@ function MainInfo() {
           {t("widget-card-description-10-1")}
         </h2>
       </div>
-      <div className=" text-widget">
-        <div className="icon">
-          <IconSakura className="iconSakura" />
-          <h2 className="text-widget-main">{t("widget-card-main-11")}</h2>
-        </div>
-        <h2 className="text-widget-description">
-          {t("widget-card-description-11-1")}
-        </h2>
-      </div>
     </div>
   );
 }
