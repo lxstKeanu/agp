@@ -26,7 +26,7 @@ function FaqPage() {
   };
 
   const items = [
-    <div className="item" data-value="1">
+    <div className="item" data-value="1" key="1">
       <PriceList
         cardName={t("LifeStyle")}
         cardDescription={t("card-text")}
@@ -40,7 +40,7 @@ function FaqPage() {
         cardText7={t("card-lifestyle-description-7")}
       />
     </div>,
-    <div className="item" data-value="2">
+    <div className="item" data-value="2" key="2">
       <PriceList
         cardName={t("Studio")}
         cardDescription={t("card-text")}
@@ -70,7 +70,7 @@ function FaqPage() {
             keyboardNavigation={!isSmallScreen}
           />
         ) : (
-          items.map((item) => item)
+          items.map((item) => <div key={item.key}>{item}</div>)
         )}
       </div>
       <div className="container">
