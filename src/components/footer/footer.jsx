@@ -11,7 +11,11 @@ function Footer() {
       <div className="logo">
         <div className="logo-ag"></div>
         <NavLink className={"nav-link"}>
-          <img className="logo-ag-photo" src={logoag} alt="" />
+          <img
+            className="logo-ag-photo logo-ag-photo-footer"
+            src={logoag}
+            alt=""
+          />
           <span className="footer-logo-name">Alesia AG Photographer</span>
         </NavLink>
       </div>

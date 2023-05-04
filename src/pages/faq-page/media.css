@@ -14,7 +14,7 @@
     }
 
     .logo-name{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .languages{
@@ -30,7 +30,7 @@
     }
 
     .card{
-        width: 250px;
+        width: 245px;
         height: 410px;
         gap: 16px;
         justify-content: flex-start;
@@ -108,6 +108,9 @@
     .footer{
         margin: 0 5px 10px 5px;
     }
+    .logo-ag-photo-footer{
+        display: none;
+    }
     
     .footer-logo-name{
         font-size: 13px;
@@ -138,7 +141,7 @@
         width: 100px;
     }
     .logo-name{
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .languages{
@@ -166,7 +169,7 @@
     }
 
     .card-ul{
-        padding: 5px 4px 5px 25px;
+        padding: 5px 10px 5px 25px;
     }
 
     .card-ul-text{
@@ -217,6 +220,10 @@
         margin: 0 5px 10px 5px;
     }
     
+    .logo-ag-photo-footer{
+        display: none;
+    }
+
     .footer-logo-name{
         font-size: 13px;
     }
@@ -245,7 +252,7 @@
     }
 
     .card{
-        width: 360px;
+        width: 345px;
         background-color: #fff;
     }
 
@@ -280,6 +287,10 @@
         margin: 0 5px 10px 5px;
     }
     
+    .logo-ag-photo-footer{
+        display: none;
+    }
+
     .footer-logo-name{
         font-size: 13px;
     }
@@ -301,6 +312,19 @@
         align-items: flex-start;
     }
     
+    .logo{
+        width: 193px;
+    }
+
+    .logo-name{
+        width: 170px;
+        font-size: 17px;
+    }
+
+    .footer-logo-name{
+        font-size: 17px;
+    }
+
     .card{
         background-color: #fff;
     }
@@ -321,6 +345,14 @@
         margin: 0 10px 10px 10px;
     }
 
+    .year-of-creation{
+        width: 193px;
+    }
+
+    .footer-creator{
+        width: 193px;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px){
@@ -328,6 +360,10 @@
         margin: 0 20px 30px 20px;
     }
     
+    .logo-name{
+        width: 200px;
+    }
+
     .card{
         background-color: #fff;
     }
