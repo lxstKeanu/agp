@@ -6,7 +6,11 @@
 
 
     .header{
-        margin: 0px 0px 0px 5px
+        margin: 0px 5px 20px 5px
+    }
+
+    .logo{
+        width: 83px;
     }
 
     .logo-name{
@@ -27,7 +31,7 @@
 
     .card{
         width: 250px;
-        height: 390px;
+        height: 410px;
         gap: 16px;
         justify-content: flex-start;
         background-color: #fff;
@@ -47,7 +51,7 @@
     }
 
     .card-ul{
-        padding: 5px 0px 5px 30px;
+        padding: 5px 4px 5px 25px;
         width: 190px;
     }
 
@@ -102,7 +106,7 @@
     }
 
     .footer{
-        margin: 0 10px 0 10px;
+        margin: 0 5px 10px 5px;
     }
     
     .footer-logo-name{
@@ -110,7 +114,11 @@
     }
     
     .year-of-creation{
-        margin-right: 5%;
+        width: 83px;
+    }
+
+    .footer-creator{
+        width: 83px;
     }
 
 }
@@ -123,9 +131,12 @@
 
 
     .header{
-        margin: 0px 0px 0px 5px
+        margin: 0px 5px 20px 5px
     }
 
+    .logo{
+        width: 100px;
+    }
     .logo-name{
         font-size: 16px;
     }
@@ -143,7 +154,7 @@
     }
 
     .card{
-        width: 300px;
+        width: 285px;
         height: 320px;
         gap: 15px;
         justify-content: flex-start;
@@ -155,7 +166,7 @@
     }
 
     .card-ul{
-        padding: 5px 0px 5px 30px;
+        padding: 5px 4px 5px 25px;
     }
 
     .card-ul-text{
@@ -203,7 +214,7 @@
     }
 
     .footer{
-        margin: 0 10px 0 10px;
+        margin: 0 5px 10px 5px;
     }
     
     .footer-logo-name{
@@ -211,18 +222,26 @@
     }
     
     .year-of-creation{
-        margin-right: 15%;
+        width: 100px;
+    }
+
+    .footer-creator{
+        width: 100px;
     }
 
 }
 
 @media screen and (min-width: 376px) and (max-width: 575px){
     .header{
-        margin: 0 0 20px 5px;
+        margin: 0 5px 20px 5px;
+    }
+
+    .logo{
+        width: 100px;
     }
 
     .logo-name{
-        font-size: 19px;
+        font-size: 13px;
     }
 
     .card{
@@ -258,15 +277,19 @@
     }
 
     .footer{
-        margin: 0 10px 0 10px;
+        margin: 0 5px 10px 5px;
     }
     
     .footer-logo-name{
-        font-size: 16px;
+        font-size: 13px;
     }
     
     .year-of-creation{
-        margin-right: 15%;
+        width: 100px;
+    }
+
+    .footer-creator{
+        width: 100px;
     }
 }
 
@@ -295,7 +318,7 @@
     }
 
     .footer{
-        margin: 0 20px 0 20px;
+        margin: 0 10px 10px 10px;
     }
 
 }
@@ -348,7 +371,7 @@
     }
 
     .footer{
-        margin: 0 15px 0 15px;
+        margin: 0 10px 10px 10px;
     }
 
     .year-of-creation{

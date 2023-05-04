@@ -16,16 +16,14 @@ function Footer() {
         </NavLink>
       </div>
       <span className="year-of-creation">©2023</span>
-      <div className="footer-by">
-        <a
-          className="footer-link"
-          href="https://t.me/lxstKeanu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="footer-creator">By lxstKeanu</span>
-        </a>
-      </div>
+      <a
+        className="footer-link"
+        href="https://t.me/lxstKeanu"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="footer-creator">By lxstKeanu</span>
+      </a>
     </footer>
   );
 }

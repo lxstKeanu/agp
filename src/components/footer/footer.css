@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    margin: 0 20px;
+    margin: 0 20px 10px;
 }
 
 .footer-description{
@@ -42,6 +42,9 @@
 }
 
 .year-of-creation{
+    width: 300px;
+    display: flex;
+    justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 11px;
     cursor: default;
@@ -54,6 +57,9 @@
 
 .footer-creator{
     font-family: 'PT Serif', serif;
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
     font-size: 13px;
     cursor: pointer;
 }

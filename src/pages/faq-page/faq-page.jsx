@@ -17,6 +17,8 @@ import "./media.css";
 function FaqPage() {
   const { t } = useTranslation();
 
+  const isSmallScreen = window.screen.width < 1024;
+
   const responsive = {
     0: { items: 1 },
     568: { items: 1 },
@@ -57,15 +59,19 @@ function FaqPage() {
   return (
     <div>
       <Header />
-      <div className="wrapper-card">
-        <AliceCarousel
-          mouseTracking
-          items={items}
-          responsive={responsive}
-          controlsStrategy="alternate"
-          disableButtonsControls={false}
-          keyboardNavigation={true}
-        />
+      <div className="wrapper-card container">
+        {isSmallScreen ? (
+          <AliceCarousel
+            mouseTracking={isSmallScreen}
+            items={items}
+            responsive={responsive}
+            controlsStrategy="responsive"
+            disableButtonsControls={true}
+            keyboardNavigation={!isSmallScreen}
+          />
+        ) : (
+          items.map((item) => item)
+        )}
       </div>
       <div className="container">
         <div className="upper-text-description">
