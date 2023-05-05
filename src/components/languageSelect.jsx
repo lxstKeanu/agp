@@ -20,13 +20,13 @@ const LanguageSelect = () => {
 
   const [menuAnchor, setMenuAnchor] = React.useState(null);
   React.useEffect(() => {
-    document.body.dir = languageMap[selected].dir;
+    document.body.dir = languageMap[selected]?.dir;
   }, [menuAnchor, selected]);
 
   return (
     <div className="d-flex justify-content-end align-items-center language-select-root">
       <Button onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
-        {languageMap[selected].label}
+        {languageMap[selected]?.label}
         <ArrowDropDownIcon fontSize="small" />
       </Button>
       <Popover

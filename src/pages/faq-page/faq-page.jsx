@@ -70,7 +70,7 @@ function FaqPage() {
             keyboardNavigation={!isSmallScreen}
           />
         ) : (
-          items.map((item) => <div key={item.key}>{item}</div>)
+          items?.map((item) => <div key={item.key}>{item}</div>)
         )}
       </div>
       <div className="container">
