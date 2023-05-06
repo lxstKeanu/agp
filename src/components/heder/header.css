@@ -58,3 +58,7 @@
   background-color: #ed9bae !important;
 }
 
+.rotate {
+  transform: rotate(180deg);
+}
+

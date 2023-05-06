@@ -27,7 +27,11 @@ const LanguageSelect = () => {
     <div className="d-flex justify-content-end align-items-center language-select-root">
       <Button onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
         {languageMap[selected].label}
-        <ArrowDropDownIcon fontSize="small" />
+        {!menuAnchor ? (
+          <ArrowDropDownIcon fontSize="small" />
+        ) : (
+          <ArrowDropDownIcon className="rotate" fontSize="small" />
+        )}
       </Button>
       <Popover
         open={!!menuAnchor}
