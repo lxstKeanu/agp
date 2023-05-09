@@ -9,20 +9,28 @@
         margin: 0px 5px 20px 5px
     }
 
+    .logo-ag-photo{
+        display: none;
+    }
+
     .logo{
-        width: 83px;
+       
+        width: 100px;
     }
 
     .logo-name{
         font-size: 13px;
+        margin-left: 0;
     }
 
-    .languages{
-        width: 90px;
+    .header-language-select{
+        width: 100px;
     }
 
-    .custom-btn{
-        width: 80px;
+    .menu__box{
+        width: 150px;
+        height: 13%;
+        padding: 60px 0;
     }
 
     .wrapper-card{
@@ -140,16 +148,22 @@
     .logo{
         width: 100px;
     }
+
+    .logo-ag-photo{
+        display: none;
+    }
+
     .logo-name{
         font-size: 13px;
     }
 
-    .languages{
-        width: 90px;
+    .header-language-select{
+        width: 100px;
     }
 
-    .custom-btn{
-        width: 80px;
+    .menu__box{
+        height: 20%;
+        padding: 60px 0;
     }
 
     .wrapper-card{
@@ -244,11 +258,20 @@
     }
 
     .logo{
-        width: 100px;
+        width: 150px;
     }
 
     .logo-name{
         font-size: 13px;
+    }
+
+    .header-language-select{
+        width: 150px;
+    }
+
+    .menu__box{
+        height: 13%;
+        padding: 80px 0;
     }
 
     .card{
@@ -311,14 +334,15 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    
-    .logo{
-        width: 193px;
-    }
 
     .logo-name{
         width: 170px;
         font-size: 17px;
+    }
+
+    .menu__box{
+        width: 300px;
+        height: 16%;
     }
 
     .footer-logo-name{
@@ -362,6 +386,11 @@
     
     .logo-name{
         width: 200px;
+    }
+
+    .menu__box{
+        height: 13%;
+        padding: 60px 0;
     }
 
     .card{

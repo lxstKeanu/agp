@@ -24,7 +24,7 @@ const LanguageSelect = () => {
   }, [menuAnchor, selected]);
 
   return (
-    <div className="d-flex justify-content-end align-items-center language-select-root">
+    <div className="header-language-select">
       <Button onClick={({ currentTarget }) => setMenuAnchor(currentTarget)}>
         {languageMap[selected].label}
         {!menuAnchor ? (

@@ -10,7 +10,7 @@ function Footer() {
     <footer className="footer">
       <div className="logo">
         <div className="logo-ag"></div>
-        <NavLink className={"nav-link"}>
+        <NavLink className={"nav-link"} to={"/faq"}>
           <img
             className="logo-ag-photo logo-ag-photo-footer"
             src={logoag}
