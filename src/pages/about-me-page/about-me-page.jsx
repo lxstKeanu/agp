@@ -10,7 +10,9 @@ export default function AboutMePage() {
       <header>
         <Header />
       </header>
-      <main>About Me</main>
+      <main>
+        <div className="container">About Me</div>
+      </main>
       <footer>
         <Footer />
       </footer>

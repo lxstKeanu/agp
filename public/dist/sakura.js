@@ -83,7 +83,7 @@ var Sakura = function Sakura(selector, options) {
 
   function elementInViewport(el) {
     var rect = el.getBoundingClientRect();
-    return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+    return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.outerWidth);
   }
 
   this.createPetal = function () {

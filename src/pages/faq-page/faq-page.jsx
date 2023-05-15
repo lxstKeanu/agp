@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../components/heder/heder";
 import PriceList from "../../components/price-list/price-list";
 import MainInfo from "../../components/main-info/main-info";
@@ -17,7 +17,19 @@ import "./media.css";
 function FaqPage() {
   const { t } = useTranslation();
 
-  const isSmallScreen = window.screen.width < 1024;
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = (event) => {
+      setWidth(event.target.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const isSmallScreen = width < 1024;
 
   const responsive = {
     0: { items: 1 },

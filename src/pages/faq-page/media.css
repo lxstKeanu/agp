@@ -157,6 +157,10 @@
         font-size: 13px;
     }
 
+    .MuiButton-root{
+        font-size: 0.7rem !important;
+    }
+
     .header-language-select{
         width: 100px;
     }
@@ -183,7 +187,7 @@
     }
 
     .card-ul{
-        padding: 5px 10px 5px 25px;
+        padding: 5px 5px 5px 25px;
     }
 
     .card-ul-text{
