@@ -20,7 +20,7 @@ export default function Header() {
       <div className="header">
         <div className="logo">
           <div className="logo-ag"></div>
-          <NavLink className={"nav-link"} to="/faq">
+          <NavLink className={"nav-link"} to="/">
             <img
               className="logo-ag-photo"
               src={logoag}

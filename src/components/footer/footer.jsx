@@ -10,14 +10,14 @@ function Footer() {
     <footer className="footer">
       <div className="logo">
         <div className="logo-ag"></div>
-        <NavLink className={"nav-link"} to={"/faq"}>
+        <NavLink className={"nav-link"} to={"/"}> 
           <img
             className="logo-ag-photo logo-ag-photo-footer"
             src={logoag}
             alt=""
           />
           <span className="footer-logo-name">Alesia AG Photographer</span>
-        </NavLink>
+      </NavLink> 
       </div>
       <span className="year-of-creation">©2023</span>
       <a
