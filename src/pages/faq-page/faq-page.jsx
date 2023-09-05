@@ -42,7 +42,7 @@ function FaqPage() {
       <PriceList
         cardName={t("LifeStyle")}
         cardDescription={t("card-text")}
-        price="99 €"
+        price="75 €"
         cardText1={t("card-lifestyle-description-1")}
         cardText2={t("card-lifestyle-description-2")}
         cardText3={t("card-lifestyle-description-3")}
@@ -56,7 +56,7 @@ function FaqPage() {
       <PriceList
         cardName={t("Studio")}
         cardDescription={t("card-text")}
-        price="119 €"
+        price="75 €"
         cardText1={t("card-studio-description-1")}
         cardText2={t("card-studio-description-2")}
         cardText3={t("card-studio-description-3")}

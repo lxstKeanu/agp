@@ -8,7 +8,7 @@ import MyWorksPage from "./pages/my-works-page/my-works-page";
 function App() {
   return (
     <Routes>
-      <Route index element={<FaqPage />} />
+      <Route index element={<FaqPage />} /> 
       <Route exact path="/faq" element={<FaqPage />} />
       <Route exact path="/about-me" element={<AboutMePage />} />
       <Route exact path="/my-works" element={<MyWorksPage />} />

@@ -27,8 +27,8 @@ i18n
     .use(initReactI18next)
     .init({
         resources,
-        fallbackLng: 'en',
-        lng: 'en',
+        fallbackLng: 'ua',
+        lng: 'ua',
 
         detection: {
             checkWhitelist: true

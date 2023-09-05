@@ -26,7 +26,7 @@ function PriceList({
         <li className="card-ul-text">{cardText3}</li>
         <li className="card-ul-text">{cardText4}</li>
         <li className="card-ul-text">{cardText5}</li>
-        <li className="card-ul-text">{cardText6}</li>
+        {/* <li className="card-ul-text">{cardText6}</li> */}
         <li className="card-ul-text">{cardText7}</li>
       </ul>
     </div>
